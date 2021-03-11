@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit 5 Notes</title>
+</head>
+<body>
+    <h1>HTML NOTES
+    <hr>
+    <h1>Headers</h1>
+    <p> Headers are used to create titles and section titles. There are 6 different sizes pre-formatted for HTML<>
+        <h1>h1 - Computer Science</h1>
+        <h2>h2 - Computer Science</h2>
+        <h3>h3 - Computer Science</h3>
+        <h4>h4 - Computer Science</h4>
+        <h5>h5 - Computer Science</h5>
+        <h6>h6 - Computer Science</h6>
+
+        <hr>
+
+        <h1>Text Formatting</h1>
+        <p>There are three main types of text formatting. Those are <b>bold</b>, <i>italics</i>, and <u>underline</u>.</p>
+
+        <h2>Inline vs. Block Elements</h2>
+        <p>A <b>block element</b> moves the content to a new line. the paragraph and header elements. An <b>inline element</b> does not display its content on a new line it keeps the</p>
+
+        <h3><u>Block Elements Examples</u></h3>
+        <p>this is a paragraph.<p></p>
+
+        <p>an<b>image element</b> in an <i>inline</i> element which inserts pictures into the document. An image element is self-closing,which means
+        it does not have a closing tag. It has one major attribute, src, which is a filepath that points to the images' location. Those filepaths can
+        either be <b>Absolute</b> <b>Relative</b></p>
+
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg">
+        <img src="https://wallup.net/wp-content/uploads/2016/01/20264-nature-forest-trees-green.jpg">
+
+        <h2>Image attributes</h2>
+        <p>There are 4 attributes commonly used for images. <i>width</i>and <i>height</i>are used to resize the images. <i>alt</i> allows to use the text description of images for accesibility
+        and broken images, <i>title</i>allows a hover-over text to appear</p>
+
+        <h3>Width and Height</h3>
+        <p>The width and height can be measured in many different ways, but more common ones are pixels and percentages.</p>
+
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" titl="Set width and height using pixels and respecting aspect ratio" width="150px" height="150px">
+
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" titl="Set width and height using pixels and respecting aspect ratio" width="150px" height="150px">
+
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" titl="Set width and height using pixels and respecting aspect ratio" width="150px" height="150px">
+
+             <h3>Alt Attribute</h3>
+        <p>Every picture should at LEAST have the alt attribute. The alt attribute helps with screen readers for visually impaired and in case the image is broken</p>
+
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" width="50%">
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" alt="river running through taiga and mountains" width="50%"
+        <img src="https://wallup.net/wp-content/uploads/2016/03/10/343179-landscape-nature.jpg" title="river running through taiga and mountains" width="50%"
+
+             <h2>Relative vs. absolute</h2>
+        <p>an <b>absolute</b> filepath includes all the navigation to get to the server, folder and file. The examples above are all absolute filepaths. An absolute filepath is used
+        when the image is stored on a different server or device than the HTML document</p>
+
+        <p>A <b>relative</b> filepath only includes folders and files. The example below is relative filepath. A relative filepath is used when the images are stored alongside the HTML document</p>
+
+        <img src="tree.jpg" width="150px" alt="tree posted in a meadow">
+
+        <hr>
+
+        <h1 style="color: #f05454">Links</h1>
+        <p>The <b>anchor element</b> is an <i>inline element</i> and is a way to include hypertext, otherwise known as just links, in your document.
+             An anchor is a reference point for other documents or files. It commonly has 3 attributes: <i>href</i>, <i>target</i> and <i>download</i></p>
+
+        <h2>A simple link</h2>
+        <a href="http://ihasabucket.com/">Link</a>
+
+        <p>In order for the link to work it <b>MUST</b> include the <i>href</i> attribute. This attribute is the filepath, either absolute or relative
+         to the document, website or file you wish to link</p>
+
+        <h2>Link Attributes</h2>
+        <p>The <i>target</i>attribute allows you to decide where the link opens.</p>
+
+        <a href="http://ihasabucket.com/" target="_blank">This link will open in a new tab</a>
+
+        <p>The <i>download</i> attribute allows you to download the file or document linked and assign it a new filename. This is commonly
+        used with relative filepaths</p>
+
+        <a href="tree.jpg" download="treePic">This will download a Tree picture</a>
+
+        <h2>A picture as Link</h2>
+        <p>Since a link has an opening AND a closing tag, we can place ANY HTML ELEMENT as its content, which includes pictures. We simply
+        nest the img inside the anchor element</p>
+
+        <a href="ihasabucket" target="_blank">
+            <img src="tree.jpg" width="150px" alt="sillhouette of a deer in a meadow at sunset">
+        </a>
+
+        <h2>Link to Another Page</h2>
+
+        <a href="cssnotes.html">CSS Notes Page</a>
+
